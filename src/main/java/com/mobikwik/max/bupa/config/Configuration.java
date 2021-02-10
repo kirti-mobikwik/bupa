@@ -13,7 +13,7 @@ public class Configuration {
     @Bean
     public SoapClient soapConnector(Jaxb2Marshaller marshaller){
         SoapClient client = new SoapClient();
-        client.setDefaultUri("http://localhost:8081/ws");
+        client.setDefaultUri("http://serviceuat.maxbupa.com/LibraWebsitePaymentServicePB/Service1.asmx?WSDL");
         client.setMarshaller(marshaller());
         client.setUnmarshaller(marshaller());
         return client;
